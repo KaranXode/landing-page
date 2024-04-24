@@ -1,0 +1,150 @@
+.edie__nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+
+  &--container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--container-logo {
+    width: 70px;
+    height: 53px;
+
+    h2 {
+      font-family: var(--font-heebo);
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 53px;
+    }
+  }
+
+  &--navlinks {
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 0 1rem;
+      a {
+        color: var(--color--main);
+        font-weight: 500;
+        line-height: 36px;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 3px;
+          background-color: var(--font-color--main);
+          margin: 0 auto;
+          display: block;
+          transition: transform 200ms ease;
+          transform: scale(0, 1);
+          transform-origin: center;
+        }
+
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+
+  &--mobile__navlinks {
+    display: none;
+
+    &--icons {
+      display: none;
+
+      @media (max-width: 768px) {
+        background-color: #100e1d;
+        display: flex;
+        position: absolute;
+        top: 80%;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .icons-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 50px;
+        bottom: 50px;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &--hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .edie__nav--navlinks {
+    display: none;
+  }
+
+  .edie__nav--hamburger {
+    display: block;
+
+    .hamburger-icons {
+      font-size: 2rem;
+    }
+  }
+
+  .edie__nav--mobile__navlinks {
+    display: block;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: left 300ms ease;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 60%;
+    padding-top: 15vh;
+    z-index: 1;
+
+    &.showMobileNav {
+      left: 0;
+    }
+
+    li {
+      margin-left: 15%;
+      margin-bottom: 1.25rem;
+
+      a {
+        color: var(--color--main);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .edie__nav--hamburger {
+    .hamburger-icons {
+      font-size: 1.5rem;
+    }
+  }
+}

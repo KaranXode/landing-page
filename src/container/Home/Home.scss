@@ -1,0 +1,128 @@
+.edie__hero {
+  padding-top: 20vh;
+
+  @media (max-width: 768px) {
+    padding-top: 18vh;
+  }
+
+  &--container {
+    width: 70%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+
+  &--linktext {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 27px;
+    color: var(--font-link--color);
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 18px;
+    }
+
+    @media (max-width: 567px) {
+      font-size: 12px;
+    }
+  }
+
+  &--main--text {
+    width: 543px;
+    height: 144px;
+
+    @media (max-width: 768px) {
+      height: unset;
+    }
+
+    @media (max-width: 576px) {
+      width: 272px;
+      height: unset;
+    }
+
+    h1 {
+      color: var(--font-color--main);
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 72px;
+
+      @media (max-width: 768px) {
+        font-size: 2.25rem;
+        line-height: 52px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  &--image--container {
+    width: 95%;
+    margin: 2.25rem auto;
+
+    @media (max-width: 768px) {
+      margin: 1.25rem auto;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 18px;
+
+      /* TESTING */
+      @media (max-width: 375px) {
+        height: 145px;
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+
+  &--text {
+    width: 543px;
+    margin-bottom: 1.75rem;
+
+    @media (max-width: 576px) {
+      width: 90%;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      /* Gray 2 */
+      color: #4f4f4f;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &--contact {
+    &-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #828282;
+      margin-bottom: 5px;
+
+      @media (max-width: 576px) {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+
+   
+  }
+}
