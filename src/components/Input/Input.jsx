@@ -8,7 +8,7 @@ const Input = () => {
       <form onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="email"></label>
         <input type="email" name="email" id="email" placeholder="Email" />
-        <button type="submit" className="edie__btn">
+        <button type="submit" className="karan__btn">
           Join
         </button>
       </form>

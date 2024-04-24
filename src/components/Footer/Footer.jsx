@@ -8,20 +8,20 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="edie__footer" id="Contact">
-      <div className="edie__footer--container">
-        <ul className="edie__footer--navlinks">
+    <footer className="karan__footer" id="Contact">
+      <div className="karan__footer--container">
+        <ul className="karan__footer--navlinks">
           <NavLinks />
         </ul>
-        <div className="edie__footer--title">
-          <h3>Edie</h3>
-          <div className="edie__footer--title__icons">
+        <div className="karan__footer--title">
+          <h3>karan</h3>
+          <div className="karan__footer--title__icons">
             <img src={InstagramIcon} alt="Instagram Icon" />
             <img src={LinkedInIcon} alt="LinkedIn Icon" />
             <img src={TwitterIcon} alt="Twitter Icon" />
           </div>
         </div>
-        <div className="edie__footer--form">
+        <div className="karan__footer--form">
           <Input />
         </div>
       </div>

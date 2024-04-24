@@ -10,9 +10,9 @@ const Services = () => {
   const colors = ["#2D9CDB", "#27AE60", "#EB5757"];
 
   return (
-    <section className="edie__services" id="Services">
-      <h2 className="edie__services--text">We offer high demand services</h2>
-      <div className="edie__services--container">
+    <section className="karan__services" id="Services">
+      <h2 className="karan__services--text">We offer high demand services</h2>
+      <div className="karan__services--container">
         <Card
           image={<EditIcon />}
           iconColor={colors[0]}

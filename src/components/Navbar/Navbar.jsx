@@ -32,23 +32,23 @@ const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <nav className="edie__nav">
-      <div className="edie__nav--container">
-        <div className="edie__nav--container-logo">
-          <h2>Edie</h2>
+    <nav className="karan__nav">
+      <div className="karan__nav--container">
+        <div className="karan__nav--container-logo">
+          <h2>karan</h2>
         </div>
-        <ul className="edie__nav--navlinks">
+        <ul className="karan__nav--navlinks">
           <NavLinks />
         </ul>
         <ul
           className={
             showMobileNav
-              ? "edie__nav--mobile__navlinks showMobileNav"
-              : "edie__nav--mobile__navlinks "
+              ? "karan__nav--mobile__navlinks showMobileNav"
+              : "karan__nav--mobile__navlinks "
           }
         >
           <NavLinks />
-          <div className="edie__nav--mobile__navlinks--icons">
+          <div className="karan__nav--mobile__navlinks--icons">
             <div className="icons-container">
               <img src={InstagramIcon} alt="Instagram Icon" />
               <img src={LinkedInIcon} alt="LinkedIn Icon" />
@@ -56,7 +56,7 @@ const Navbar = () => {
             </div>
           </div>
         </ul>
-        <div className="edie__nav--hamburger">
+        <div className="karan__nav--hamburger">
           {showMobileNav ? (
             <CloseIcon
               className="hamburger-icons"

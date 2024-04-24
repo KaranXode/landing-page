@@ -3,17 +3,17 @@ import "./Card.scss";
 
 const Cards = ({ image, title, content, iconColor }) => {
   return (
-    <div className="edie__card">
-      <div className="edie__card--container">
+    <div className="karan__card">
+      <div className="karan__card--container">
         <div
-          className="edie__card--icon"
+          className="karan__card--icon"
           style={{ backgroundColor: iconColor }}
         >
           <div className="icon">{image}</div>
         </div>
-        <h3 className="edie__card--title">{title}</h3>
-        <p className="edie__card--text">{content}</p>
-        <button className="edie__card--btn">Get started</button>
+        <h3 className="karan__card--title">{title}</h3>
+        <p className="karan__card--text">{content}</p>
+        <button className="karan__card--btn">Get started</button>
       </div>
     </div>
   );
