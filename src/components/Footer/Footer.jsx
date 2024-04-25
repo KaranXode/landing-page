@@ -14,7 +14,7 @@ const Footer = () => {
           <NavLinks />
         </ul>
         <div className="karan__footer--title">
-          <h3>karan</h3>
+          <h3>Karan</h3>
           <div className="karan__footer--title__icons">
             <img src={InstagramIcon} alt="Instagram Icon" />
             <img src={LinkedInIcon} alt="LinkedIn Icon" />

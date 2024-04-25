@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav className="karan__nav">
       <div className="karan__nav--container">
         <div className="karan__nav--container-logo">
-          <h2>karan</h2>
+          <h2>{"<Karan/>"}</h2>
         </div>
         <ul className="karan__nav--navlinks">
           <NavLinks />
